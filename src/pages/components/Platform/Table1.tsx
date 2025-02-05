@@ -90,7 +90,7 @@ const Table1 = ({
             </tr>
           </thead>
           <tbody>
-            {currencyData.length > 0 &&
+            {currencyData && currencyData.length > 0 &&
               [...Array(Math.ceil(currencyData.length / columns))].map(
                 (_, rowIndex) => (
                   <tr
